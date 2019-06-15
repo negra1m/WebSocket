@@ -17,7 +17,7 @@ export class DataService {
   observer: Observer<number>;
 
   getQuotes() : Observable<number> {
-    this.socket = socketIo('http://localhost:8080');
+    this.socket = socketIo('https://websocketservervnsn.azurewebsites.net');
 
     this.socket.on('data', (res) => {
       this.observer.next(res.data);
