@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs/Subscription';
 })
 export class AppComponent implements OnInit, OnDestroy {
 
-  stockQuote: number;
+  stockQuote: number = 0;
   sub: Subscription;
 
   constructor(private dataService: DataService) { }
