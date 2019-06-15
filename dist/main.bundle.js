@@ -207,7 +207,7 @@ var DataService = (function () {
     }
     DataService.prototype.getQuotes = function () {
         var _this = this;
-        this.socket = __WEBPACK_IMPORTED_MODULE_2_socket_io_client__('https://websocketservervnsn.azurewebsites.net');
+        this.socket = __WEBPACK_IMPORTED_MODULE_2_socket_io_client__('https://websocketservervnsn.azurewebsites.net:8080');
         this.socket.on('data', function (res) {
             _this.observer.next(res.data);
         });
