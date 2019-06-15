@@ -52,7 +52,7 @@ var AppRoutingModule = (function () {
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1>WebSocket atualizando via Node server</h1>\r\n<br />\r\n<h2>Números: {{ stockQuote }}</h2>\r\n<br />\r\n"
+module.exports = "    \r\n    <h1>WebSocket atualizando via Node server</h1>\r\n    <br />\r\n    <h2>Números: {{ stockQuote }}</h2>\r\n    <br />\r\n"
 
 /***/ }),
 
