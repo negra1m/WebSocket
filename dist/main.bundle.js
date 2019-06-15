@@ -52,7 +52,7 @@ var AppRoutingModule = (function () {
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Using Angular with WebSockets</h1>\r\n<br />\r\n<h2>Quote: {{ stockQuote }}</h2>\r\n<br />\r\n"
+module.exports = "<h1>WebSocket atualizando via Node server</h1>\r\n<br />\r\n<h2>Números: {{ stockQuote }}</h2>\r\n<br />\r\n"
 
 /***/ }),
 
@@ -207,7 +207,7 @@ var DataService = (function () {
     }
     DataService.prototype.getQuotes = function () {
         var _this = this;
-        this.socket = __WEBPACK_IMPORTED_MODULE_2_socket_io_client__('http://localhost:8080');
+        this.socket = __WEBPACK_IMPORTED_MODULE_2_socket_io_client__('http://localhost');
         this.socket.on('data', function (res) {
             _this.observer.next(res.data);
         });
